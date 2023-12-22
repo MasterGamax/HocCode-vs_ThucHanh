@@ -1,0 +1,52 @@
+body {
+    margin: 0; /* Remove default margin */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Use the full height of the viewport */
+    background-color: black;
+    font-family: "FX_LED"; /* Apply the font-family to the entire document */
+  }
+  
+  .digital-clock {
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    border-radius: 2rem;
+    user-select: none;
+    padding: 0 2rem;
+    border: 0.5rem solid #2d2d2d;
+  }
+  
+  .week {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 3rem;
+    color: #2d2d2d;
+    font-weight: bold;
+    font-family: "Hack";
+  }
+  
+  .week .active {
+    color: whitesmoke;
+  }
+  
+  .time {
+    font-family: "FX_LED";
+  }
+  .hour,
+  .min,
+  .dot {
+    display: inline-block;
+    font-size: 13rem;
+  }
+  
+  .min {
+    display: math;
+  }
+  
+  .invisible {
+    visibility: hidden;
+  }
+  
